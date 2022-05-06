@@ -4,10 +4,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>Couting Date</title>
-	<link rel="stylesheet" type="text/css" href="css/countingDate_style.css">
-	<link rel="stylesheet" type="text/css" href="css/land_day_night_style.css">
-	<link rel="stylesheet" type="text/css" href="css/heartBeat_style.css">
-	<link rel="stylesheet" type="text/css" href="css/cloud_sky_star_style.css">
+	<link rel="stylesheet" type="text/css" href="css/countingDate_styles/countingDate_style.css">
+	<link rel="stylesheet" type="text/css" href="css/countingDate_styles/land_day_night_style.css">
+	<link rel="stylesheet" type="text/css" href="css/countingDate_styles/heartBeat_style.css">
+	<link rel="stylesheet" type="text/css" href="css/countingDate_styles/cloud_sky_star_style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
@@ -233,7 +233,7 @@
 					<div class="heartBefore"></div>
 					<div class="heartAfter"></div>
 					<div class="heartDays">
-						<p>2 days</p>
+						<p id="textDays"></p>
 					</div>
 				</div>
 
@@ -274,6 +274,8 @@
 
 	<!-- Initialize Firebase -->
 	<script src="/__/firebase/init.js"></script>
+
+	<script src="js/countingDate_func.js"></script>
 
 </body>
 
