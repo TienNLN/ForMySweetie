@@ -1,0 +1,266 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* top: -50px; */
+	font-family: "Roboto", sans-serif;
+	line-height: 1.5;
+	min-height: 100vh;
+	overflow: hidden;
+	min-width: 100vw;
+}
+
+header {
+	position: relative;
+	font-family: cursive;
+}
+
+h3.header {
+	margin-top: 0;
+}
+
+.avaImg {
+	margin-top: 200px;
+	height: 500px;
+}
+
+.backgroundImg {
+	margin: 0;
+	padding: 0;
+	background-image: url("Background/BackgroundCountingDate.jpg");
+	position: fixed;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	filter: blur(2px);
+}
+
+.headerSpan {
+	text-align: center;
+	font-size: 1rem;
+	display: block;
+	cursor: default;
+	letter-spacing: 20px;
+	margin-bottom: 150px;
+}
+
+.header {
+	background-image: linear-gradient(to right bottom, #FFF89A, #FFF);
+	/* background-image: #52e75f;  */
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	color: transparent;
+	font-size: 3rem;
+	text-align: center;
+}
+
+.image1 {
+	position: absolute;
+	display: inline-block;
+	width: 35%;
+	margin-left: 5%;
+	/* margin-right: 10%; */
+	transition: all 1.5s ease;
+	background-color: linear-gradient(to right bottom, yellow, red);
+	/* position: absolute; */
+	z-index: 100;
+	height: 200px;
+
+}
+
+.image1_front {
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	margin: 0;
+	margin-left: 30px;
+	padding: 0;
+	transition: all 1.5s;
+	backface-visibility: hidden;
+}
+
+.image1_front img {
+	width: 30%;
+	border-radius: 200px;
+	margin: auto 35%;
+	margin-top: -10%;
+}
+
+.image1_back {
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	margin: 0;
+	margin-left: 30px;
+	padding: 0;
+	transform: rotateY(180deg);
+	transition: all 1.5s;
+	backface-visibility: hidden;
+}
+
+.image1_back img {
+	width: 30%;
+	border-radius: 200px;
+	margin: auto 35%;
+	margin-top: -10%;
+}
+
+.nickname1_front {
+	position: absolute;
+	text-align: center;
+	display: inline-block;
+	padding: 0;
+	font-weight: 100;
+	font-size: 2rem;
+	color: #FF96BA;
+	width: 90%;
+	margin: auto 35%;
+	margin-top: 15%;
+	margin-left: 30px;
+	letter-spacing: 1px;
+	font-style: italic;
+	backface-visibility: hidden;
+	transition: all 1.5s;
+}
+
+.nickname1_back {
+	position: absolute;
+	text-align: center;
+	display: inline-block;
+	padding: 0;
+	font-weight: 100;
+	font-size: 2rem;
+	color: #FF96BA;
+	width: 90%;
+	margin: auto 35%;
+	margin-top: 15%;
+	margin-left: 30px;
+	letter-spacing: 1px;
+	font-style: italic;
+	transform: rotateX(180deg);
+	backface-visibility: hidden;
+	transition: all 1.5s;
+}
+
+.image1:hover>.image1_front {
+	transform: rotateY(-180deg);
+}
+
+.image1:hover>.image1_back {
+	transform: rotateY(0deg);
+}
+
+.image1:hover>.nickname1_front {
+	transform: rotateX(-180deg);
+}
+
+.image1:hover>.nickname1_back {
+	transform: rotateX(0deg);
+}
+
+.image2 {
+	position: absolute;
+	display: inline-block;
+	width: 35%;
+	/* margin-right: 5%; */
+	transition: all 1.5s ease;
+	left: 60%;
+	float: right;
+	z-index: 100;
+	height: 200px;
+}
+
+.image2_front {
+	position: absolute;
+	transition: all 1.5s;
+	width: 90%;
+	height: 90%;
+	margin: 0;
+	margin-left: 30px;
+	padding: 0;
+	backface-visibility: hidden;
+}
+
+.image2_front img {
+	width: 30%;
+	border-radius: 200px;
+	margin: auto 35%;
+	margin-top: -10%;
+}
+
+.image2_back {
+	position: absolute;
+	transition: all 1.5s;
+	transform: rotateY(180deg);
+	width: 90%;
+	height: 90%;
+	margin: 0;
+	margin-left: 30px;
+	padding: 0;
+	backface-visibility: hidden;
+}
+
+.image2_back img {
+	width: 30%;
+	border-radius: 200px;
+	margin: auto 35%;
+	margin-top: -10%;
+}
+
+.nickname2_front {
+	position: absolute;
+	text-align: center;
+	display: inline-block;
+	padding: 0;
+	font-weight: 100;
+	font-size: 2rem;
+	color: #FF96BA;
+	width: 90%;
+	margin: auto 35%;
+	margin-top: 15%;
+	margin-left: 30px;
+	letter-spacing: 1px;
+	font-style: italic;
+	backface-visibility: hidden;
+	transition: all 1.5s;
+}
+
+.nickname2_back {
+	position: absolute;
+	text-align: center;
+	display: inline-block;
+	padding: 0;
+	font-weight: 100;
+	font-size: 2rem;
+	color: #FF96BA;
+	width: 90%;
+	margin: auto 35%;
+	margin-top: 15%;
+	margin-left: 30px;
+	letter-spacing: 1px;
+	font-style: italic;
+	transform: rotateX(180deg);
+	backface-visibility: hidden;
+	transition: all 1.5s;
+}
+
+.image2:hover>.image2_front {
+	transform: rotateY(180deg);
+}
+
+.image2:hover>.image2_back {
+	transform: rotateY(0deg);
+}
+
+.image2:hover>.nickname2_front {
+	transform: rotateX(-180deg);
+}
+
+.image2:hover>.nickname2_back {
+	transform: rotateX(0deg);
+}
