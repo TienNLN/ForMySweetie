@@ -110,4 +110,4 @@ function setStartDate() {
     xhr.send(JSON.stringify(data.getTime()));
 }
 
-export { increaseSayNo, increaseSayYes, getStartDate, setStartDate }
+export { increaseSayNo, increaseSayYes, getStartDate }

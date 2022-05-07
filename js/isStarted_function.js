@@ -1,4 +1,4 @@
-import { increaseSayNo, increaseSayYes, getStartDate } from "./firebaseUtil.js";
+import { increaseSayNo, increaseSayYes } from "./firebaseUtil.js";
 
 var modal = document.getElementById("myModal");
 
