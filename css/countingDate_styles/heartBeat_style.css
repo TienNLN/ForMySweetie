@@ -77,6 +77,10 @@
 	cursor: pointer;
 }
 
+.heart:hover {
+	cursor: pointer;
+}
+
 .heart:hover>.heartDays {
 	color: #FFF;
 }

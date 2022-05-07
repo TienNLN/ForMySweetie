@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/countingDate_styles/land_day_night_style.css">
 	<link rel="stylesheet" type="text/css" href="css/countingDate_styles/heartBeat_style.css">
 	<link rel="stylesheet" type="text/css" href="css/countingDate_styles/cloud_sky_star_style.css">
+	<link rel="stylesheet" type="text/css" href="css/countingDate_styles/model_style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
@@ -232,7 +233,7 @@
 				<div class="heart">
 					<div class="heartBefore"></div>
 					<div class="heartAfter"></div>
-					<div class="heartDays">
+					<div class="heartDays" id="heartDays">
 						<p id="textDays"></p>
 					</div>
 				</div>
@@ -263,6 +264,30 @@
 		</div> -->
 	</div>
 
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<!-- <div class="modal-header">
+				<span class="close">&times;</span>
+				<h2></h2>
+			</div> -->
+			<div class="modal-body">
+				<p>Có iu tui hong</p>
+			</div>
+			<div class="modal-footer">
+				<div class="leftButton" id="yesBtn">
+					<span>Có iuuuuu</span>
+				</div>
+				<div class="rightButton" id="noBtn">
+					<span>Hong iu</span>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
 
 	<script src="function.js"></script>
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -276,6 +301,7 @@
 	<script src="/__/firebase/init.js"></script>
 
 	<script src="js/countingDate_func.js"></script>
+	<script type="module" src="js/isStarted_function.js"></script>
 
 </body>
 
