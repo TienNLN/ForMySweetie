@@ -23,7 +23,9 @@ function increaseSayYes() {
 
     xhr.send(data);
 
-    setStartDate();
+    if (getStartDate().toString() == '""') {
+        setStartDate();
+    }
 }
 
 function getCountYes() {
