@@ -25,10 +25,12 @@ var yesButton = document.getElementById("yesBtn");
 
 yesButton.onclick = function () {
     increaseSayYes();
+    modal.style.display = "none";
 }
 
 var noBtn = document.getElementById("noBtn");
 
 noBtn.onclick = function () {
     increaseSayNo();
+    modal.style.display = "none";
 }
