@@ -102,6 +102,8 @@ function setStartDate() {
         if (xhr.readyState === 4) {
             console.log(xhr.status);
             console.log(xhr.responseText);
+
+            document.location.reload(true);
         }
     }
 
