@@ -1,7 +1,8 @@
-let startDate = new Date("5/7/2022");
+import { getStartDate } from "./firebaseUtil"
+
 let currentDate = new Date();
 
-let totalTimes = startDate.getTime() - currentDate.getTime();
+let totalTimes = currentDate.getTime() - getStartDate();
 
 let totalDays = Math.ceil(totalTimes / (1000 * 3600 * 24));
 

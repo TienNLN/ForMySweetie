@@ -1,4 +1,4 @@
-import {getCountNo, getCountYes, increaseSayNo, increaseSayYes} from "./firebaseUtil.js";
+import { increaseSayNo, increaseSayYes, getStartDate } from "./firebaseUtil.js";
 
 var modal = document.getElementById("myModal");
 
@@ -26,4 +26,22 @@ var yesButton = document.getElementById("yesBtn");
 yesButton.onclick = function () {
     increaseSayYes();
 }
+
+var noBtn = document.getElementById("noBtn");
+
+noBtn.onclick = function() {
+    increaseSayNo();
+}
+
+// let startDate = new Date(getStartDate());
+
+// console.log('startDate: ' + startDate);
+let currentDate = new Date();
+
+let totalTimes = currentDate.getTime() - getStartDate();
+
+let totalDays = Math.ceil(totalTimes / (1000 * 3600 * 24));
+
+const targetDiv = document.getElementById("textDays");
+targetDiv.textContent = totalDays.toString() + " days";
 
