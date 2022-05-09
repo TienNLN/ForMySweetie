@@ -32,5 +32,7 @@ var noBtn = document.getElementById("noBtn");
 
 noBtn.onclick = function () {
     increaseSayNo();
+    alert("Chả iu tui 🥺🥺");
+    alert("Chả thương tui 🥺🥺");
     modal.style.display = "none";
 }
