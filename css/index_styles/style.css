@@ -1,4 +1,5 @@
-html, body{
+html,
+body {
 	margin: 0;
 	padding: 0;
 }
@@ -22,7 +23,7 @@ header {
 	padding: 0;
 	position: absolute;
 	display: flex;
-	height: 3659.57px;	
+	height: 6987.52px;
 	place-items: center;
 	top: -100px;
 	left: 0;
@@ -47,7 +48,7 @@ header {
 }
 
 .scrollingImg .singleColumn_1 {
-	animation: var(--animation, none) 20s infinite linear;
+	animation: var(--animation, none) 50s infinite linear;
 	top: 0;
 	right: 0;
 
@@ -58,15 +59,15 @@ header {
 }
 
 .scrollingImg .singleColumn_1 {
-  	align-self: flex-end;
-  	--direction: 50%;
+	align-self: flex-end;
+	--direction: 50%;
 }
 
 @keyframes slide {
-  to {
-    -webkit-transform: translateY(var(--direction, -50%));
-            transform: translateY(var(--direction, -50%));
-  }
+	to {
+		-webkit-transform: translateY(var(--direction, -50%));
+		transform: translateY(var(--direction, -50%));
+	}
 }
 
 
@@ -76,7 +77,7 @@ header {
 	padding: 0;
 	position: absolute;
 	display: flex;
-	height: 3659.57px;	
+	height: 6987.52px;
 	place-items: center;
 	top: -100px;
 	right: 0;
@@ -100,7 +101,7 @@ header {
 }
 
 .scrollingImg_Right .singleColumn_2 {
-	animation: var(--animation1, none) 20s infinite linear;
+	animation: var(--animation1, none) 50s infinite linear;
 	top: 0;
 	right: 0;
 	--direction: -50%;
@@ -111,14 +112,14 @@ header {
 }
 
 @keyframes slide1 {
-  to {
-    -webkit-transform: translateY(var(--direction, -50%));
-            transform: translateY(var(--direction, -50%));
-  }
+	to {
+		-webkit-transform: translateY(var(--direction, -50%));
+		transform: translateY(var(--direction, -50%));
+	}
 }
 
 .backgroundImage {
-	background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4), rgba(110, 110, 180, 0.4)), url("../../Background/testBg.gif");
+	background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4), rgba(110, 110, 180, 0.4)), url("../../Background/background.gif");
 	position: absolute;
 	background-size: cover;
 	top: 0;
@@ -132,7 +133,7 @@ header {
 
 .headingSpan {
 	text-transform: uppercase;
-	background-image: linear-gradient(to right bottom, #734F96, #FBAED2,white, white);
+	background-image: linear-gradient(to right bottom, #734F96, #FBAED2, white, white);
 	-webkit-background-clip: text;
 	color: transparent;
 	font-size: 2rem;
@@ -145,7 +146,7 @@ header {
 	display: block;
 	font-size: 2rem;
 	text-align: center;
-	cursor: default;	
+	cursor: default;
 }
 
 .row {
@@ -184,7 +185,7 @@ header {
 .iconLogo {
 	text-align: center;
 	vertical-align: middle;
-	color: #fff; 	
+	color: #fff;
 	width: 100%;
 	font-size: 2rem;
 	transition: all 0.5s;
@@ -200,7 +201,7 @@ header {
 	opacity: 1;
 }
 
-.flatBttn:hover> .iconLogo {
+.flatBttn:hover>.iconLogo {
 	background-color: #e6a9b3;
 	font-size: 2.5rem;
 	border-top-left-radius: 50px;
@@ -211,7 +212,7 @@ header {
 	padding-top: 15px;
 }
 
-.flatBttn:hover> .labelfBttn {
+.flatBttn:hover>.labelfBttn {
 	display: block;
 	transform: translateY(-20px);
 	text-align: center;
