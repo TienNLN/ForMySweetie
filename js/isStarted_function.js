@@ -9,10 +9,10 @@ var btn = document.getElementById("heartDays");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function () {
-    console.log("clicked");
-    modal.style.display = "flex";
-}
+// btn.onclick = function () {
+//     console.log("clicked");
+//     modal.style.display = "flex";
+// } em iu chọn xong ròi nên comment hoi
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
